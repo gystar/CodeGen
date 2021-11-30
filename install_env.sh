@@ -2,6 +2,7 @@ conda create --name codeGen_env python=3.6.9
 conda activate codeGen_env
 conda config --add channels conda-forge
 conda config --add channels pytorch
+pip install torch==1.9.1
 
 conda install pytorch torchvision torchaudio cudatoolkit=11.0 six scikit-learn stringcase transformers ply slimit astunparse submitit
 pip install cython
@@ -20,9 +21,9 @@ git clone https://github.com/tree-sitter/tree-sitter-java.git
 git clone https://github.com/tree-sitter/tree-sitter-python.git
 cd ..
 
-cd codegen_sources/test_generation/
-wget https://github.com/EvoSuite/evosuite/releases/download/v1.1.0/evosuite-1.1.0.jar
-cd ../..
+#cd codegen_sources/test_generation/
+#wget https://github.com/EvoSuite/evosuite/releases/download/v1.1.0/evosuite-1.1.0.jar
+#cd ../..
 
 git clone https://github.com/NVIDIA/apex
 cd apex
